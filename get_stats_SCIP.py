@@ -2,12 +2,11 @@ import os
 from re import findall
 
 
-path1 = "outs/new_no_tr"
-path2 = "outs/new_tr"
-path3 = "outs/old_tr"
-path4 = "outs/old_no_tr"
-paths = [path1, path2, path3, path4]
+path1 = "data/schedules/SCIP/outs/new_no_tr"
+path2 = "data/schedules/SCIP/outs/new_tr"
+paths = [path1, path2]
 
+out_file = open("SCIP_res.py", "w")
 for path in paths:
     dags = os.listdir(path)
     names = []
@@ -19,6 +18,7 @@ for path in paths:
         name = file[:-9]
         names.append(name)
         nodes[name] = 0
+        nodes_set = set()
         status[name] = False
         file = open(path + "/" + file, "r")
         lines = file.readlines()
@@ -34,10 +34,16 @@ for path in paths:
                 nums = findall(r"\d+", line)
                 times[name] = int(nums[0]) + int(nums[1]) / 100
             elif line.startswith("s_"):
-                nodes[name] += 1
+                tmp_line = line.split()
+                nodes_set.add(tmp_line[0])
             elif "obj:1" in line:
                 nums = findall(r"\d+", line)
                 obj[name] = int(nums[0])
+        nodes[name] = len(nodes_set)
+
+    out_file.write("times" + str(paths.index(path) + 1) + " = " + str(times) + "\n")
+    out_file.write("nodes" + str(paths.index(path) + 1) + " = " + str(nodes) + "\n")
+    out_file.write("status" + str(paths.index(path) + 1) + " = " + str(status) + "\n")
     print("path" + str(paths.index(path) + 1) + " = '" + path[5:] + "'")
     print("names" + str(paths.index(path) + 1) + " =", names)
     print("times" + str(paths.index(path) + 1) + " =", times)
