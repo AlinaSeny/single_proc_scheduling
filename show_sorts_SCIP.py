@@ -12,7 +12,7 @@ parser.add_argument(
     '-tr',
     '--transitive',
     action='store_true',
-    help='set m_i_j=1 for transitive edges'
+    help='show diagram for transitive edges'
 )
 args = parser.parse_args()
 

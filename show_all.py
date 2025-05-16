@@ -14,13 +14,6 @@ class SolverResults:
     path2 = 'new_tr'
     names2 = []
     times2 = {}
-    path3 = 'old_tr'
-    names3 = []
-    times3 = {}
-    path4 = 'old_no_tr'
-    names4 = []
-    times4 = {}
-    #reduces = [path1, path2, path3, path4]
     reduces = [path1, path2]
 
     def __init__(self):
@@ -28,10 +21,10 @@ class SolverResults:
 
         for node in nodes1:
             #if node in self.times1 and node in self.times2 and node in self.times3 and node in self.times4:
-            if node in self.times1 and node in self.times2:
+            '''if node in self.times1 and node in self.times2:
                 True
             else:
-                continue
+                continue'''
             m = re.search(r'(\d)[^\d]*$', node)
             name = node[:m.start() + 1]
             if name in self.res_d or name.startswith('triang_'):
@@ -67,57 +60,27 @@ class SolverResults:
 
 
 class GLPK(SolverResults):
-    import GLPK_resnew
-    path1 = GLPK_resnew.path1
-    names1 = GLPK_resnew.names1
-    times1 = GLPK_resnew.times1
-    path2 = GLPK_resnew.path2
-    names2 = GLPK_resnew.names2
-    times2 = GLPK_resnew.times2
-    path3 = GLPK_resnew.path3
-    names3 = GLPK_resnew.names3
-    times3 = GLPK_resnew.times3
-    path4 = GLPK_resnew.path4
-    names4 = GLPK_resnew.names4
-    times4 = GLPK_resnew.times4
+    import GLPK_res
+    times1 = GLPK_res.times1
+    times2 = GLPK_res.times2
 
     def __init__(self):
         super().__init__()
 
 
 class CBC(SolverResults):
-    import CBC_resnew
-    path1 = CBC_resnew.path1
-    names1 = CBC_resnew.names1
-    times1 = CBC_resnew.times1
-    path2 = CBC_resnew.path2
-    names2 = CBC_resnew.names2
-    times2 = CBC_resnew.times2
-    path3 = CBC_resnew.path3
-    names3 = CBC_resnew.names3
-    times3 = CBC_resnew.times3
-    path4 = CBC_resnew.path4
-    names4 = CBC_resnew.names4
-    times4 = CBC_resnew.times4
+    import CBC_res
+    times1 = CBC_res.times1
+    times2 = CBC_res.times2
 
     def __init__(self):
         super().__init__()
 
 
 class SCIP(SolverResults):
-    import SCIP_resnew
-    path1 = SCIP_resnew.path1
-    names1 = SCIP_resnew.names1
-    times1 = SCIP_resnew.times1
-    path2 = SCIP_resnew.path2
-    names2 = SCIP_resnew.names2
-    times2 = SCIP_resnew.times2
-    path3 = SCIP_resnew.path3
-    names3 = SCIP_resnew.names3
-    times3 = SCIP_resnew.times3
-    path4 = SCIP_resnew.path4
-    names4 = SCIP_resnew.names4
-    times4 = SCIP_resnew.times4
+    import SCIP_res
+    times1 = SCIP_res.times1
+    times2 = SCIP_res.times2
 
     def __init__(self):
         super().__init__()
@@ -131,6 +94,9 @@ border = {"default": 'red', "reverse_tiers": 'aqua', "tiers": 'yellow', "down_le
 glpk = GLPK()
 cbc = CBC()
 scip = SCIP()
+print(sorted(glpk.res_d.keys()))
+print(sorted(scip.res_d.keys()))
+print(sorted(cbc.res_d.keys()))
 names = set(glpk.res_d.keys()) & set(cbc.res_d.keys()) & set(scip.res_d.keys())
 
 cat_par = []
