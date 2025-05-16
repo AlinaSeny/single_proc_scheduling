@@ -1,0 +1,356 @@
+GLPSOL--GLPK LP/MIP Solver 5.0
+Parameter(s) specified in the command line:
+ --cpxlp --first inputs/new_tr/order/jump_3_40_reverse_tiers_input.lp -o solutions/new_tr/jump_3_40_reverse_tiers_input.lp
+Reading problem data from 'inputs/new_tr/order/jump_3_40_reverse_tiers_input.lp'...
+inputs/new_tr/order/jump_3_40_reverse_tiers_input.lp:8602: warning: lower bound of variable 'm_6_6' redefined
+inputs/new_tr/order/jump_3_40_reverse_tiers_input.lp:8602: warning: upper bound of variable 'm_6_6' redefined
+8208 rows, 3241 columns, 25071 non-zeros
+3241 integer variables, 2854 of which are binary
+11802 lines were read
+GLPK Integer Optimizer 5.0
+8208 rows, 3241 columns, 25071 non-zeros
+3241 integer variables, 2854 of which are binary
+Preprocessing...
+540 hidden packing inequaliti(es) were detected
+419 hidden covering inequaliti(es) were detected
+1170 constraint coefficient(s) were reduced
+6705 rows, 2492 columns, 19546 non-zeros
+2492 integer variables, 2451 of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.024e+04  ratio =  1.024e+04
+GM: min|aij| =  3.976e-01  max|aij| =  2.515e+00  ratio =  6.325e+00
+EQ: min|aij| =  1.581e-01  max|aij| =  1.000e+00  ratio =  6.325e+00
+2N: min|aij| =  1.250e-01  max|aij| =  1.625e+00  ratio =  1.300e+01
+Constructing initial basis...
+Size of triangular part is 6120
+Solving LP relaxation...
+GLPK Simplex Optimizer 5.0
+6705 rows, 2492 columns, 19546 non-zeros
+      0: obj =   3.072000000e+04 inf =   1.080e+03 (599)
+Perturbing LP to avoid stalling [202]...
+   2461: obj =   5.949273434e+04 inf =   7.009e-08 (0) 22
+Removing LP perturbation [5804]...
+*  5804: obj =   4.206440998e+04 inf =   1.601e-13 (0) 32
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++  5804: mip =     not found yet >=              -inf        (1; 0)
++ 14539: mip =     not found yet >=   4.206500000e+04        (9; 0)
++ 22430: mip =     not found yet >=   4.206600000e+04        (10; 1)
++ 31373: mip =     not found yet >=   4.206600000e+04        (17; 1)
++ 43102: mip =     not found yet >=   4.207100000e+04        (18; 2)
++ 52346: mip =     not found yet >=   4.207100000e+04        (22; 2)
++ 60471: mip =     not found yet >=   4.207500000e+04        (24; 3)
++ 69386: mip =     not found yet >=   4.208000000e+04        (29; 4)
++ 89371: mip =     not found yet >=   4.208000000e+04        (33; 4)
++100016: mip =     not found yet >=   4.208300000e+04        (37; 5)
+Time used: 60.5 secs.  Memory used: 9.2 Mb.
++109180: mip =     not found yet >=   4.208300000e+04        (43; 6)
++118996: mip =     not found yet >=   4.208900000e+04        (44; 7)
++128997: mip =     not found yet >=   4.208900000e+04        (49; 7)
++137995: mip =     not found yet >=   4.209300000e+04        (51; 8)
++146536: mip =     not found yet >=   4.209300000e+04        (54; 8)
++160718: mip =     not found yet >=   4.209400000e+04        (59; 9)
++171395: mip =     not found yet >=   4.209500000e+04        (63; 10)
++181321: mip =     not found yet >=   4.210000000e+04        (71; 12)
++190441: mip =     not found yet >=   4.210100000e+04        (74; 13)
++199187: mip =     not found yet >=   4.210100000e+04        (75; 13)
+Time used: 120.6 secs.  Memory used: 9.5 Mb.
++208318: mip =     not found yet >=   4.210500000e+04        (82; 15)
++217747: mip =     not found yet >=   4.210500000e+04        (83; 16)
++226717: mip =     not found yet >=   4.211400000e+04        (83; 20)
++235340: mip =     not found yet >=   4.212200000e+04        (86; 21)
++244556: mip =     not found yet >=   4.213700000e+04        (94; 26)
++254501: mip =     not found yet >=   4.213700000e+04        (105; 26)
++263919: mip =     not found yet >=   4.213700000e+04        (118; 26)
++279072: mip =     not found yet >=   4.213800000e+04        (119; 27)
++290477: mip =     not found yet >=   4.213900000e+04        (123; 29)
++299523: mip =     not found yet >=   4.214000000e+04        (130; 30)
++306784: mip =     not found yet >=   4.214000000e+04        (132; 30)
+Time used: 183.9 secs.  Memory used: 9.9 Mb.
++325753: mip =     not found yet >=   4.214400000e+04        (134; 33)
++334116: mip =     not found yet >=   4.214400000e+04        (135; 34)
++344032: mip =     not found yet >=   4.214400000e+04        (153; 34)
++355422: mip =     not found yet >=   4.214400000e+04        (164; 34)
++363846: mip =     not found yet >=   4.215400000e+04        (164; 35)
++373177: mip =     not found yet >=   4.215900000e+04        (175; 40)
++381955: mip =     not found yet >=   4.216900000e+04        (181; 42)
++391952: mip =     not found yet >=   4.216900000e+04        (186; 43)
++400347: mip =     not found yet >=   4.217200000e+04        (188; 46)
+Time used: 244.5 secs.  Memory used: 10.4 Mb.
++411611: mip =     not found yet >=   4.218100000e+04        (192; 53)
++420955: mip =     not found yet >=   4.218600000e+04        (197; 54)
++430292: mip =     not found yet >=   4.219200000e+04        (201; 56)
++439455: mip =     not found yet >=   4.219300000e+04        (210; 57)
++451279: mip =     not found yet >=   4.220200000e+04        (213; 62)
++459635: mip =     not found yet >=   4.220200000e+04        (218; 62)
++467966: mip =     not found yet >=   4.220700000e+04        (221; 63)
++476523: mip =     not found yet >=   4.220700000e+04        (224; 64)
++485624: mip =     not found yet >=   4.221200000e+04        (232; 68)
++495420: mip =     not found yet >=   4.221400000e+04        (237; 69)
++505349: mip =     not found yet >=   4.222100000e+04        (239; 73)
+Time used: 304.9 secs.  Memory used: 10.9 Mb.
++517623: mip =     not found yet >=   4.222100000e+04        (239; 76)
++526662: mip =     not found yet >=   4.222100000e+04        (243; 76)
++540149: mip =     not found yet >=   4.222200000e+04        (250; 77)
++549626: mip =     not found yet >=   4.222200000e+04        (254; 77)
++559400: mip =     not found yet >=   4.222200000e+04        (265; 78)
++571293: mip =     not found yet >=   4.223800000e+04        (268; 79)
++580134: mip =     not found yet >=   4.224100000e+04        (268; 83)
++588783: mip =     not found yet >=   4.224100000e+04        (272; 83)
++604927: mip =     not found yet >=   4.224100000e+04        (278; 83)
+Time used: 367.3 secs.  Memory used: 11.2 Mb.
++621009: mip =     not found yet >=   4.224100000e+04        (280; 85)
++629724: mip =     not found yet >=   4.225300000e+04        (284; 86)
++637511: mip =     not found yet >=   4.225700000e+04        (284; 88)
++653959: mip =     not found yet >=   4.228700000e+04        (287; 93)
++662381: mip =     not found yet >=   4.229000000e+04        (291; 94)
++672116: mip =     not found yet >=   4.229000000e+04        (301; 94)
++681260: mip =     not found yet >=   4.229000000e+04        (310; 94)
++690349: mip =     not found yet >=   4.229900000e+04        (322; 97)
++700720: mip =     not found yet >=   4.229900000e+04        (334; 97)
+Time used: 427.4 secs.  Memory used: 11.8 Mb.
++710002: mip =     not found yet >=   4.230200000e+04        (352; 100)
++718557: mip =     not found yet >=   4.230200000e+04        (355; 100)
++728790: mip =     not found yet >=   4.230200000e+04        (365; 100)
++738767: mip =     not found yet >=   4.231100000e+04        (367; 107)
++747661: mip =     not found yet >=   4.231100000e+04        (378; 107)
++758250: mip =     not found yet >=   4.231300000e+04        (377; 110)
++768581: mip =     not found yet >=   4.231400000e+04        (380; 111)
++777705: mip =     not found yet >=   4.232000000e+04        (388; 114)
++787729: mip =     not found yet >=   4.232000000e+04        (395; 114)
++798947: mip =     not found yet >=   4.233100000e+04        (397; 118)
++807594: mip =     not found yet >=   4.233200000e+04        (401; 120)
+Time used: 488.4 secs.  Memory used: 12.4 Mb.
++818573: mip =     not found yet >=   4.233300000e+04        (404; 123)
++827888: mip =     not found yet >=   4.233800000e+04        (407; 129)
++837138: mip =     not found yet >=   4.233800000e+04        (412; 129)
++850002: mip =     not found yet >=   4.233800000e+04        (422; 131)
++858698: mip =     not found yet >=   4.233900000e+04        (426; 132)
++869035: mip =     not found yet >=   4.233900000e+04        (434; 132)
++877706: mip =     not found yet >=   4.234600000e+04        (439; 134)
++886250: mip =     not found yet >=   4.234600000e+04        (443; 134)
++899211: mip =     not found yet >=   4.234600000e+04        (455; 135)
++907948: mip =     not found yet >=   4.234600000e+04        (464; 135)
+Time used: 549.2 secs.  Memory used: 13.1 Mb.
++920262: mip =     not found yet >=   4.235000000e+04        (469; 137)
++929249: mip =     not found yet >=   4.236000000e+04        (472; 141)
++938683: mip =     not found yet >=   4.236200000e+04        (480; 142)
++948852: mip =     not found yet >=   4.236700000e+04        (489; 144)
++958450: mip =     not found yet >=   4.236700000e+04        (500; 145)
++967363: mip =     not found yet >=   4.237700000e+04        (503; 149)
++975407: mip =     not found yet >=   4.238400000e+04        (500; 154)
++992209: mip =     not found yet >=   4.238800000e+04        (501; 157)
++999105: mip =     not found yet >=   4.238800000e+04        (503; 157)
++1008814: mip =     not found yet >=   4.239800000e+04        (505; 158)
+Time used: 609.9 secs.  Memory used: 13.7 Mb.
++1017561: mip =     not found yet >=   4.239800000e+04        (514; 158)
++1027249: mip =     not found yet >=   4.240500000e+04        (520; 161)
++1035786: mip =     not found yet >=   4.240500000e+04        (525; 161)
++1044395: mip =     not found yet >=   4.240500000e+04        (534; 162)
+#1061779: obj =   5.151376720e+04 inf =   0.000e+00 (2225) 137 92%
+#1063926: obj =   5.153851633e+04 inf =   1.110e-12 (0) 21 99%
++1063926: mip =     not found yet >=   4.240900000e+04        (533; 164)
++1075453: mip =     not found yet >=   4.241800000e+04        (539; 170)
++1085341: mip =     not found yet >=   4.241800000e+04        (546; 171)
++1094218: mip =     not found yet >=   4.241800000e+04        (558; 171)
++1105238: mip =     not found yet >=   4.243600000e+04        (560; 176)
++1114244: mip =     not found yet >=   4.244400000e+04        (560; 179)
+Time used: 672.7 secs.  Memory used: 14.2 Mb.
++1126952: mip =     not found yet >=   4.247400000e+04        (565; 183)
++1135495: mip =     not found yet >=   4.250000000e+04        (567; 187)
++1144328: mip =     not found yet >=   4.250000000e+04        (578; 187)
++1154116: mip =     not found yet >=   4.250000000e+04        (583; 187)
++1167142: mip =     not found yet >=   4.250600000e+04        (587; 188)
++1176183: mip =     not found yet >=   4.250600000e+04        (600; 190)
++1184975: mip =     not found yet >=   4.250700000e+04        (604; 191)
++1194449: mip =     not found yet >=   4.250900000e+04        (617; 196)
++1205374: mip =     not found yet >=   4.250900000e+04        (617; 199)
+Time used: 732.9 secs.  Memory used: 14.8 Mb.
++1214109: mip =     not found yet >=   4.252400000e+04        (618; 204)
++1222355: mip =     not found yet >=   4.256500000e+04        (629; 208)
++1232671: mip =     not found yet >=   4.256500000e+04        (632; 208)
++1242668: mip =     not found yet >=   4.260800000e+04        (633; 214)
++1255053: mip =     not found yet >=   4.261200000e+04        (633; 214)
++1263099: mip =     not found yet >=   4.262800000e+04        (632; 219)
++1271839: mip =     not found yet >=   4.262800000e+04        (638; 219)
++1279778: mip =     not found yet >=   4.262900000e+04        (642; 221)
++1289702: mip =     not found yet >=   4.263500000e+04        (645; 225)
++1299231: mip =     not found yet >=   4.263600000e+04        (646; 226)
+Time used: 793.7 secs.  Memory used: 15.3 Mb.
++1308843: mip =     not found yet >=   4.264800000e+04        (648; 229)
++1317760: mip =     not found yet >=   4.266400000e+04        (649; 233)
++1325869: mip =     not found yet >=   4.266600000e+04        (650; 235)
++1338871: mip =     not found yet >=   4.266600000e+04        (649; 237)
++1346915: mip =     not found yet >=   4.267600000e+04        (655; 241)
++1355387: mip =     not found yet >=   4.268900000e+04        (654; 250)
++1367661: mip =     not found yet >=   4.268900000e+04        (655; 250)
++1377034: mip =     not found yet >=   4.269400000e+04        (662; 253)
++1386661: mip =     not found yet >=   4.269400000e+04        (669; 253)
++1398479: mip =     not found yet >=   4.269700000e+04        (675; 257)
+Time used: 854.1 secs.  Memory used: 15.7 Mb.
++1407606: mip =     not found yet >=   4.269700000e+04        (685; 257)
++1416316: mip =     not found yet >=   4.269900000e+04        (689; 259)
++1430868: mip =     not found yet >=   4.270000000e+04        (696; 260)
++1439110: mip =     not found yet >=   4.270200000e+04        (698; 261)
++1448787: mip =     not found yet >=   4.270700000e+04        (704; 263)
++1457430: mip =     not found yet >=   4.271200000e+04        (713; 267)
++1467680: mip =     not found yet >=   4.271400000e+04        (715; 268)
++1477233: mip =     not found yet >=   4.271400000e+04        (725; 268)
++1486926: mip =     not found yet >=   4.271400000e+04        (733; 269)
++1498581: mip =     not found yet >=   4.272400000e+04        (740; 271)
+Time used: 914.3 secs.  Memory used: 16.4 Mb.
++1510037: mip =     not found yet >=   4.273200000e+04        (749; 274)
++1520925: mip =     not found yet >=   4.273400000e+04        (759; 275)
++1530734: mip =     not found yet >=   4.274700000e+04        (760; 276)
++1539800: mip =     not found yet >=   4.275000000e+04        (761; 281)
++1549010: mip =     not found yet >=   4.276200000e+04        (765; 285)
++1559345: mip =     not found yet >=   4.277700000e+04        (765; 291)
++1572826: mip =     not found yet >=   4.278100000e+04        (767; 294)
++1582793: mip =     not found yet >=   4.278900000e+04        (770; 297)
++1595871: mip =     not found yet >=   4.279800000e+04        (772; 299)
+Time used: 975.2 secs.  Memory used: 16.9 Mb.
++1605515: mip =     not found yet >=   4.282400000e+04        (775; 301)
++1614826: mip =     not found yet >=   4.282800000e+04        (781; 303)
++1627048: mip =     not found yet >=   4.283300000e+04        (789; 304)
++1635799: mip =     not found yet >=   4.283700000e+04        (789; 308)
++1645382: mip =     not found yet >=   4.284200000e+04        (789; 311)
++1656914: mip =     not found yet >=   4.284800000e+04        (792; 312)
++1664831: mip =     not found yet >=   4.286000000e+04        (790; 316)
++1672958: mip =     not found yet >=   4.287200000e+04        (796; 319)
++1683837: mip =     not found yet >=   4.287200000e+04        (810; 319)
++1693324: mip =     not found yet >=   4.287900000e+04        (811; 324)
++1702616: mip =     not found yet >=   4.288700000e+04        (812; 326)
+Time used: 1035.3 secs.  Memory used: 17.4 Mb.
++1717201: mip =     not found yet >=   4.289000000e+04        (816; 329)
++1725431: mip =     not found yet >=   4.289100000e+04        (817; 331)
++1738845: mip =     not found yet >=   4.291700000e+04        (819; 333)
++1747026: mip =     not found yet >=   4.292600000e+04        (822; 337)
++1759417: mip =     not found yet >=   4.293500000e+04        (825; 339)
++1774533: mip =     not found yet >=   4.294600000e+04        (832; 342)
++1786681: mip =     not found yet >=   4.295600000e+04        (832; 345)
++1796192: mip =     not found yet >=   4.295600000e+04        (838; 345)
+Time used: 1097.1 secs.  Memory used: 17.7 Mb.
++1805741: mip =     not found yet >=   4.295700000e+04        (848; 348)
++1820050: mip =     not found yet >=   4.295700000e+04        (850; 349)
++1830473: mip =     not found yet >=   4.295900000e+04        (856; 352)
++1839624: mip =     not found yet >=   4.296800000e+04        (862; 354)
++1848817: mip =     not found yet >=   4.297000000e+04        (866; 356)
++1860396: mip =     not found yet >=   4.297300000e+04        (868; 357)
++1868954: mip =     not found yet >=   4.298100000e+04        (870; 359)
++1877792: mip =     not found yet >=   4.298100000e+04        (881; 360)
++1889642: mip =     not found yet >=   4.298900000e+04        (886; 367)
++1898449: mip =     not found yet >=   4.299400000e+04        (884; 371)
+Time used: 1158.7 secs.  Memory used: 18.2 Mb.
++1907457: mip =     not found yet >=   4.300800000e+04        (884; 375)
++1915408: mip =     not found yet >=   4.301500000e+04        (884; 379)
++1925613: mip =     not found yet >=   4.302700000e+04        (884; 383)
++1936558: mip =     not found yet >=   4.302900000e+04        (887; 386)
++1946170: mip =     not found yet >=   4.304000000e+04        (898; 390)
++1956786: mip =     not found yet >=   4.304000000e+04        (910; 390)
++1965928: mip =     not found yet >=   4.305100000e+04        (911; 392)
++1975578: mip =     not found yet >=   4.305400000e+04        (914; 394)
++1985177: mip =     not found yet >=   4.305800000e+04        (915; 396)
++1994169: mip =     not found yet >=   4.306000000e+04        (915; 400)
++2002981: mip =     not found yet >=   4.306300000e+04        (922; 405)
+Time used: 1218.8 secs.  Memory used: 18.7 Mb.
++2011804: mip =     not found yet >=   4.306300000e+04        (928; 405)
++2023926: mip =     not found yet >=   4.309000000e+04        (934; 408)
++2034472: mip =     not found yet >=   4.309400000e+04        (938; 409)
++2043217: mip =     not found yet >=   4.310600000e+04        (945; 412)
++2051156: mip =     not found yet >=   4.311100000e+04        (945; 415)
++2059768: mip =     not found yet >=   4.311600000e+04        (945; 418)
++2077270: mip =     not found yet >=   4.312600000e+04        (947; 422)
++2085182: mip =     not found yet >=   4.312900000e+04        (948; 423)
++2093597: mip =     not found yet >=   4.313200000e+04        (948; 425)
+Time used: 1278.9 secs.  Memory used: 19.2 Mb.
++2102564: mip =     not found yet >=   4.313200000e+04        (957; 425)
++2112882: mip =     not found yet >=   4.313300000e+04        (970; 426)
++2121108: mip =     not found yet >=   4.313500000e+04        (971; 427)
++2131268: mip =     not found yet >=   4.313900000e+04        (973; 430)
++2144783: mip =     not found yet >=   4.314400000e+04        (972; 434)
++2155107: mip =     not found yet >=   4.315000000e+04        (972; 437)
++2170273: mip =     not found yet >=   4.315000000e+04        (973; 437)
+#2192388: obj =   4.994130182e+04 inf =   0.000e+00 (2241) 141 83%
+#2193257: obj =   4.994130182e+04 inf =   0.000e+00 (0) 8 99%
++2193257: mip =     not found yet >=   4.316300000e+04        (974; 441)
+Time used: 1340.4 secs.  Memory used: 19.4 Mb.
++2205847: mip =     not found yet >=   4.316800000e+04        (975; 443)
+#2225983: obj =   5.307673224e+04 inf =   0.000e+00 (879) 138 80%
+#2226696: obj =   5.309370783e+04 inf =   0.000e+00 (346) 7 65%
++2226696: mip =     not found yet >=   4.316800000e+04        (976; 444)
++2238661: mip =     not found yet >=   4.317800000e+04        (976; 447)
++2249095: mip =     not found yet >=   4.319100000e+04        (978; 449)
++2258855: mip =     not found yet >=   4.319500000e+04        (988; 451)
++2267790: mip =     not found yet >=   4.320900000e+04        (990; 454)
++2278462: mip =     not found yet >=   4.321700000e+04        (990; 458)
++2287210: mip =     not found yet >=   4.323500000e+04        (989; 464)
+Time used: 1400.5 secs.  Memory used: 19.7 Mb.
++2295445: mip =     not found yet >=   4.323700000e+04        (992; 466)
++2304194: mip =     not found yet >=   4.324300000e+04        (993; 468)
++2312479: mip =     not found yet >=   4.325100000e+04        (993; 473)
++2320711: mip =     not found yet >=   4.326000000e+04        (994; 476)
++2328735: mip =     not found yet >=   4.326000000e+04        (994; 477)
++2338451: mip =     not found yet >=   4.326800000e+04        (995; 479)
++2349640: mip =     not found yet >=   4.327200000e+04        (998; 480)
++2358261: mip =     not found yet >=   4.327500000e+04        (1003; 481)
++2368037: mip =     not found yet >=   4.327600000e+04        (1011; 482)
++2379767: mip =     not found yet >=   4.328100000e+04        (1011; 486)
++2391123: mip =     not found yet >=   4.329000000e+04        (1012; 486)
+Time used: 1462.7 secs.  Memory used: 20.1 Mb.
++2402908: mip =     not found yet >=   4.331600000e+04        (1013; 488)
++2409894: mip =     not found yet >=   4.331600000e+04        (1014; 488)
++2419133: mip =     not found yet >=   4.331800000e+04        (1014; 489)
++2427634: mip =     not found yet >=   4.331800000e+04        (1024; 489)
++2438301: mip =     not found yet >=   4.332100000e+04        (1037; 491)
++2451733: mip =     not found yet >=   4.332600000e+04        (1037; 492)
++2459025: mip =     not found yet >=   4.332600000e+04        (1037; 493)
++2473400: mip =     not found yet >=   4.333600000e+04        (1038; 494)
++2484782: mip =     not found yet >=   4.334300000e+04        (1037; 497)
+Time used: 1524.8 secs.  Memory used: 20.5 Mb.
++2495034: mip =     not found yet >=   4.335500000e+04        (1042; 499)
++2507859: mip =     not found yet >=   4.336200000e+04        (1042; 501)
++2516612: mip =     not found yet >=   4.336200000e+04        (1042; 502)
++2524790: mip =     not found yet >=   4.336300000e+04        (1044; 503)
++2535628: mip =     not found yet >=   4.336500000e+04        (1044; 506)
++2543278: mip =     not found yet >=   4.337200000e+04        (1044; 509)
++2551895: mip =     not found yet >=   4.337900000e+04        (1043; 512)
++2561062: mip =     not found yet >=   4.337900000e+04        (1046; 513)
++2570448: mip =     not found yet >=   4.338000000e+04        (1048; 514)
++2578289: mip =     not found yet >=   4.338400000e+04        (1049; 515)
+Time used: 1586.8 secs.  Memory used: 20.8 Mb.
++2587032: mip =     not found yet >=   4.339400000e+04        (1050; 519)
++2595905: mip =     not found yet >=   4.339400000e+04        (1051; 519)
++2603746: mip =     not found yet >=   4.340100000e+04        (1052; 521)
++2611990: mip =     not found yet >=   4.340900000e+04        (1052; 523)
++2623270: mip =     not found yet >=   4.341000000e+04        (1053; 524)
++2636584: mip =     not found yet >=   4.341200000e+04        (1055; 525)
++2643967: mip =     not found yet >=   4.341400000e+04        (1055; 526)
++2651037: mip =     not found yet >=   4.341900000e+04        (1059; 528)
++2660846: mip =     not found yet >=   4.342400000e+04        (1059; 529)
++2671548: mip =     not found yet >=   4.343500000e+04        (1059; 532)
+Time used: 1649.8 secs.  Memory used: 21.0 Mb.
++2683907: mip =     not found yet >=   4.345100000e+04        (1059; 536)
++2692396: mip =     not found yet >=   4.346600000e+04        (1061; 538)
++2701019: mip =     not found yet >=   4.348400000e+04        (1061; 542)
++2713016: mip =     not found yet >=   4.349100000e+04        (1063; 545)
++2723556: mip =     not found yet >=   4.350900000e+04        (1064; 546)
++2735045: mip =     not found yet >=   4.350900000e+04        (1066; 547)
++2743737: mip =     not found yet >=   4.351100000e+04        (1069; 549)
++2752460: mip =     not found yet >=   4.351200000e+04        (1070; 550)
++2763356: mip =     not found yet >=   4.351200000e+04        (1071; 551)
+Time used: 1710.8 secs.  Memory used: 21.4 Mb.
++2771843: mip =     not found yet >=   4.352600000e+04        (1071; 556)
++2779590: mip =     not found yet >=   4.352900000e+04        (1071; 558)
++2789015: mip =     not found yet >=   4.353400000e+04        (1071; 560)
++2799276: mip =     not found yet >=   4.354500000e+04        (1075; 562)
++2806795: mip =     not found yet >=   4.355500000e+04        (1076; 563)
++2815984: mip =     not found yet >=   4.356300000e+04        (1074; 567)
++2825305: mip =     not found yet >=   4.356800000e+04        (1072; 571)
++2838764: mip =     not found yet >=   4.358900000e+04        (1078; 580)
++2852081: mip =     not found yet >=   4.360100000e+04        (1078; 583)
+Time used: 1772.0 secs.  Memory used: 21.8 Mb.
++2860695: mip =     not found yet >=   4.360900000e+04        (1082; 586)
++2870620: mip =     not found yet >=   4.363000000e+04        (1082; 590)
++2879253: mip =     not found yet >=   4.363000000e+04        (1090; 591)
++2889757: mip =     not found yet >=   4.363000000e+04        (1092; 591)
