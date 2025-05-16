@@ -47,4 +47,4 @@ for file in files:
                     sys.exit()
                 gap_to_time[gap] = time
             break
-    out_file.write(name + " = " + str(gap_to_time))
+    out_file.write(name[name.rfind("/") + 1:-3] + " = " + str(gap_to_time) + "\n")
